@@ -1,8 +1,18 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.tsx';
+import VideoPresentation from '../components/VideoPresentation.tsx';
+import About from '../components/About.tsx';
+import Skills from '../components/Skills.tsx';
+import Projects from '../components/Projects.tsx';
+import Contact from '../components/Contact.tsx';
 ---
 
 <Layout>
-	<Welcome />
+	<Hero client:load />
+	<VideoPresentation client:load />
+	<About client:load />
+	<Skills client:load />
+	<Projects client:load />
+	<Contact client:load />
 </Layout>
