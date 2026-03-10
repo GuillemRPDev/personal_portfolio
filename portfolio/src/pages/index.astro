@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.tsx';
-import VideoPresentation from '../components/VideoPresentation.tsx';
-import About from '../components/About.tsx';
-import Skills from '../components/Skills.tsx';
-import Projects from '../components/Projects.tsx';
-import Contact from '../components/Contact.tsx';
+import Hero from '../components/Hero/Hero.tsx';
+import VideoPresentation from '../components/VideoPresentation/VideoPresentation.tsx';
+import About from '../components/About/About.tsx';
+import Skills from '../components/Skills/Skills.tsx';
+import Projects from '../components/Projects/Projects.tsx';
+import Contact from '../components/Contact/Contact.tsx';
 ---
 
 <Layout>
@@ -16,3 +16,7 @@ import Contact from '../components/Contact.tsx';
 	<Projects client:load />
 	<Contact client:load />
 </Layout>
+
+<style>
+	
+</style>
