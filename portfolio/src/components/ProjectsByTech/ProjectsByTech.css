@@ -1,0 +1,137 @@
+.projects-by-tech-container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Básicamente ceros márgenes para cada slide */
+.snap-section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Sección de título */
+.title-section {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+}
+
+.title-content {
+  text-align: center;
+}
+
+.title-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.title-content p {
+  font-size: 1.5rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Secciones por tecnología */
+.tech-section {
+  background: #f3f4f6;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.tech-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tech-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+  animation: fadeInScale 0.8s ease-out both;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-by-tech-container {
+    padding-top: 70px;
+  }
+
+  .snap-section {
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  .title-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .title-content p {
+    font-size: 1.125rem;
+  }
+
+  .tech-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-by-tech-container {
+    padding-top: 60px;
+  }
+
+  .snap-section {
+    height: 100vh;
+  }
+
+  .title-content h1 {
+    font-size: 2rem;
+  }
+
+  .title-content p {
+    font-size: 1rem;
+  }
+
+  .tech-title {
+    font-size: 1.5rem;
+  }
+}

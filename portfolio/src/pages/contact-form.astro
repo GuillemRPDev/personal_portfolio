@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactFormComponent from '../components/ContactForm/ContactForm';
+---
+
+<Layout>
+	<ContactFormComponent client:only="react" />
+</Layout>

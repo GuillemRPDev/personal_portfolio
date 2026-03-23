@@ -1,5 +1,6 @@
 ---
 import "../styles/index.css";
+import Navigation from "../components/Navigation/Navigation.tsx";
 ---
 <!doctype html>
 <html lang="en">
@@ -12,6 +13,7 @@ import "../styles/index.css";
 		<title>Guillem Riera Portfolio</title>
 	</head>
 	<body>
+		<Navigation client:load />
 		<slot />
 	</body>
 </html>

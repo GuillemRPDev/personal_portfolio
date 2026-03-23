@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectsByTechComponent from '../components/ProjectsByTech/ProjectsByTech';
+---
+
+<Layout>
+	<ProjectsByTechComponent client:only="react" />
+</Layout>

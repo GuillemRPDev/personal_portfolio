@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.css';
 
 const Projects = () => {
@@ -31,17 +32,13 @@ const Projects = () => {
         <div className="projects-grid">
           {/* Recorre cada proyecto y renderiza una tarjeta */}
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tech">
-                {/* Recorre la lista de tecnologias y las renderiza */}
-                {project.tech.map((tech, i) => (
-                  <span key={i} className="tech-tag">{tech}</span>
-                ))}
-              </div>
-              <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-            </div>
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              tech={project.tech}
+              github={project.github}
+            />
           ))}
         </div>
       </div>
