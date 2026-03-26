@@ -5,6 +5,7 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectsByTech.css';
 
 const ProjectsByTechPage = () => {
+  // Datos de proyectos organizados por tecnología
   const projectsByTech = {
     'JavaScript': [
       {

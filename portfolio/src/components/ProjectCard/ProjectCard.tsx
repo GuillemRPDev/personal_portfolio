@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectCard.css';
 
+// Interfaz para las props de ProjectCard
 interface ProjectCardProps {
   title: string;
   description: string;

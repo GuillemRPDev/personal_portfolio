@@ -1,6 +1,7 @@
 import React from 'react';
 import './AnimatedTitle.css';
 
+// Interfaz para las props del componente AnimatedTitle
 interface AnimatedTitleProps {
   title: string;
   subtitle?: string;
