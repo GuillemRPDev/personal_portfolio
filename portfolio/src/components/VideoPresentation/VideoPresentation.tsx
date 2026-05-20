@@ -10,7 +10,7 @@ const VideoPresentation = () => {
         <div className="video-wrapper">
           {/* Iframe para mostrar el video de YouTube */}
           <iframe
-            src="https://www.youtube.com/embed/lDuyW9wqZRo"
+            src="https://www.youtube.com/embed/WdomAJG9sIk?si=vfSgNZzhnyc7ijNz"
             className="video-iframe"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
